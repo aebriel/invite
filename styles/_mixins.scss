@@ -1,0 +1,27 @@
+@mixin button() {
+    background-color: $button-color;
+    font-family: $font;
+    padding: 12px;
+    border-color: $button-color;
+    border-radius: 8px;
+    margin: 20px;
+    color: darkslategray;
+}
+
+@mixin divBasics() {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+    scroll-snap-type: both mandatory;
+    scroll-snap-align: center;
+}
+
+@mixin buttonDivs() {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

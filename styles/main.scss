@@ -1,0 +1,43 @@
+@import 'variables';
+@import 'mixins';
+
+:root {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.button {
+  @include buttonDivs;
+}
+
+button {
+  @include button;
+}
+
+.header, #family-member, #coldflu, #whoop, .guidelines-header, #didyouread, #sure, #skipped, #fine, .approved, .congratulations, .denied {
+  @include divBasics;
+}
+
+img {
+  object-fit: contain;
+  height: 30vh;
+  border-radius: 8px;
+}
+
+html {
+  background-color: $background-color;
+  font-family: $font;
+  color: $font-color;
+}
