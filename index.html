@@ -3,37 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You have been invited!</title>
-    <link rel="stylesheet" href="/styles/main.css">
+    <title>The Ultimate Quiz</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Congratulations!</h1>
-        <h2>You have been invited to visit Cy Cy.</h2>
-        <h3>Are you eligible to visit?</h3>
-        <button class="eligibility"><a href="#family-member">Check your eligibility.</a></button>
-    </div>
-    <div id="family-member">
-        <h3>Are you an immediate family member of either of the parents?</h3>
-        <div class="button">
-        <button id="yes-member"><a href="#coldflu">Yes</a></button>
-        <button id="no-member"><a href="/html/denied.html">No</a></button>
+    <h1>The Ultimate Quiz</h1>
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-btns" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn">Next</button>
         </div>
     </div>
-    <div id="coldflu">
-        <h3>Are you experiencing or have you had any cold and flu-like symptoms within the last week?</h3>
-        <div class="button">
-        <button id="yes-coldflu"><a href="/html/denied.html">Yes</a></button>
-        <button id="no-coldflu"><a href="#whoop">No</a></button>
-        </div>
-    </div>
-    <div id="whoop">
-        <h3>Have you had your whooping cough vaccination within the last 10 years?</h3>
-        <p>(This does not apply to a Bella or anyone who recently had a Bella in the last 10 years. Just click 'yes' if you are a Bella or had a Bella.)</p>
-        <div class="button">
-        <button id="yes-whoop"><a href="/html/congratulations.html">Yes</a></button>
-        <button id="no-whoop"><a href="/html/denied.html">No</a></button>
-        </div>
-    </div>
+    <script src="index.js"></script>
 </body>
 </html>
